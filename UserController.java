@@ -11,23 +11,22 @@ public class UserController {
         boolean keepRunning = true;
 
         while(keepRunning){
-            view.displayMenu();
-            int option = Integer.parseInt(view.getInput("Ingrese una opción: "));
+            String option = view.displayMenu();
 
             switch(option){
-                case 1:
+                case "1":
                     createUser();
                     break;
-                case 2:
+                case "2":
                     consultUser();
                     break;
-                case 3:
+                case "3":
                     modifyUser();
                     break;
-                case 4:
+                case "4":
                     deleteUser();
                     break;
-                case 5:
+                case "5":
                     keepRunning = false;
                     break;
                 default:
