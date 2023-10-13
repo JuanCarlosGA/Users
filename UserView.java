@@ -26,6 +26,5 @@ public class UserView {
         System.out.println("3. Modificar usuario");
         System.out.println("4. Eliminar usuario");
         System.out.println("5. Salir");
-        System.out.println("Ingrese una opción: ");
     }
 }
