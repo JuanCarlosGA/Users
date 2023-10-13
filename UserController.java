@@ -9,9 +9,10 @@ public class UserController {
 
     public void run() {
         boolean keepRunning = true;
+        String option;
 
         while(keepRunning){
-            String option = view.displayMenu();
+            option = view.displayMenu();
 
             switch(option){
                 case "1":
