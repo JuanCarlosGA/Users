@@ -1,6 +1,8 @@
 import java.util.Scanner;
 
 public class UserView {
+    Scanner scanner = new Scanner(System.in);
+
     public void printUserDetails(User user) {
         System.out.println("\n Detalles del usuario: ");
         System.out.println("Nombre de usuario: " + user.getUsername());
@@ -10,8 +12,7 @@ public class UserView {
 
     public String getInput(String message) {
         System.out.print(message);
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine();
+        return this.scanner.nextLine();
     }
 
     public void showMessage(String message) {
