@@ -22,14 +22,15 @@ public class UserView {
         JOptionPane.showMessageDialog(null, message);
     }
 
-    public void displayMenu() {
+    public String displayMenu() {
         String message = "Menú de opciones:\n" +
                             "1. Crear usuario\n" +
                             "2. Ver detalles de usuario\n" +
                             "3. Modificar usuario\n" +
                             "4. Eliminar usuario\n" +
-                            "5. Salir";
+                            "5. Salir\n" +
+                            "Ingrese una opción: ";
 
-        JOptionPane.showMessageDialog(null, message);
+        return JOptionPane.showInputDialog(null, message);
     }
 }
