@@ -19,12 +19,14 @@ public class UserView {
         System.out.println(message);
     }
 
-    public void displayMenu() {
+    public String displayMenu() {
         System.out.println("\n Menú de opciones: ");
         System.out.println("1. Crear usuario");
         System.out.println("2. Ver detalles de usuario");
         System.out.println("3. Modificar usuario");
         System.out.println("4. Eliminar usuario");
         System.out.println("5. Salir");
+
+        return getInput("Ingrese una opción: ");
     }
 }
